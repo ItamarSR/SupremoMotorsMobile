@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "observacao": "Cada item ocupa um 'slot'; instalar outro item do mesmo slot substitui o anterior. Efeitos sao percentuais/valores aplicados por VehicleStats.",
+  "categorias": [
+    { "id": "motor", "nome": "Motor", "itens": [
+      { "id": "ecu_stage1", "nome": "ECU reprogramada (Stage 1)", "slot": "ecu", "preco": 900, "efeitos": { "potencia_pct": 8, "consumo_pct": 3, "confiabilidade": -0.01, "valor_pct": 2 } },
+      { "id": "comando_valvulas", "nome": "Comando de valvulas esportivo", "slot": "comando", "preco": 1500, "efeitos": { "potencia_pct": 10, "confiabilidade": -0.02, "valor_pct": 3 } },
+      { "id": "injecao_esportiva", "nome": "Injecao esportiva", "slot": "injecao", "preco": 1200, "efeitos": { "potencia_pct": 6, "consumo_pct": 4, "valor_pct": 2 } },
+      { "id": "pistoes_forjados", "nome": "Pistoes e bielas forjados", "slot": "bloco", "preco": 2800, "efeitos": { "potencia_pct": 4, "confiabilidade": 0.04, "peso_kg": -3, "valor_pct": 4 } },
+      { "id": "turbo_pequeno", "nome": "Turbo pequeno", "slot": "turbo", "preco": 4500, "efeitos": { "potencia_pct": 25, "turbo": true, "consumo_pct": 15, "confiabilidade": -0.04, "peso_kg": 12, "valor_pct": 8 } },
+      { "id": "turbo_grande", "nome": "Turbo grande", "slot": "turbo", "preco": 9000, "efeitos": { "potencia_pct": 45, "turbo": true, "consumo_pct": 28, "confiabilidade": -0.08, "peso_kg": 18, "valor_pct": 12 } },
+      { "id": "intercooler", "nome": "Intercooler", "slot": "intercooler", "preco": 1800, "efeitos": { "potencia_pct": 5, "confiabilidade": 0.02, "peso_kg": 6, "valor_pct": 2 } },
+      { "id": "radiador_alu", "nome": "Radiador de aluminio", "slot": "radiador", "preco": 700, "efeitos": { "confiabilidade": 0.03, "peso_kg": -2, "valor_pct": 1 } }
+    ]},
+    { "id": "transmissao", "nome": "Transmissao", "itens": [
+      { "id": "embreagem_esportiva", "nome": "Embreagem esportiva", "slot": "embreagem", "preco": 1100, "efeitos": { "potencia_pct": 2, "confiabilidade": 0.01, "valor_pct": 1 } },
+      { "id": "diferencial_autoblocante", "nome": "Diferencial autoblocante", "slot": "diferencial", "preco": 2200, "efeitos": { "aderencia_pct": 6, "valor_pct": 3 } },
+      { "id": "relacao_curta", "nome": "Relacao final curta", "slot": "relacao", "preco": 800, "efeitos": { "relacao_final_pct": 10 } },
+      { "id": "relacao_longa", "nome": "Relacao final longa", "slot": "relacao", "preco": 800, "efeitos": { "relacao_final_pct": -8 } }
+    ]},
+    { "id": "escape", "nome": "Escapamento", "itens": [
+      { "id": "escape_esportivo", "nome": "Escape esportivo 63 mm", "slot": "escape", "preco": 1000, "efeitos": { "potencia_pct": 3, "escape_mm": 63, "valor_pct": 2 } },
+      { "id": "escape_inox_70", "nome": "Escape inox 70 mm", "slot": "escape", "preco": 1800, "efeitos": { "potencia_pct": 5, "escape_mm": 70, "valor_pct": 3 } },
+      { "id": "downpipe_76", "nome": "Downpipe + escape 76 mm", "slot": "escape", "preco": 3200, "efeitos": { "potencia_pct": 8, "escape_mm": 76, "confiabilidade": -0.01, "valor_pct": 4 } },
+      { "id": "valvula_escape", "nome": "Valvula de escape (estouros)", "slot": "valvula", "preco": 900, "efeitos": { "pops": true, "valor_pct": 1 } }
+    ]},
+    { "id": "suspensao", "nome": "Suspensao e freios", "itens": [
+      { "id": "molas_esportivas", "nome": "Molas esportivas (-25 mm)", "slot": "suspensao", "preco": 900, "efeitos": { "altura_mm": -25, "aderencia_pct": 4, "valor_pct": 2 } },
+      { "id": "coilover", "nome": "Coilover (-40 mm)", "slot": "suspensao", "preco": 2600, "efeitos": { "altura_mm": -40, "aderencia_pct": 8, "valor_pct": 4 } },
+      { "id": "suspensao_ar", "nome": "Suspensao a ar (-60 mm)", "slot": "suspensao", "preco": 3500, "efeitos": { "altura_mm": -60, "aderencia_pct": 5, "peso_kg": 15, "valor_pct": 5 } },
+      { "id": "freios_esportivos", "nome": "Freios esportivos", "slot": "freios", "preco": 1500, "efeitos": { "freio_pct": 25, "valor_pct": 2 } },
+      { "id": "pneus_esportivos", "nome": "Pneus esportivos", "slot": "pneus", "preco": 1200, "efeitos": { "aderencia_pct": 10, "valor_pct": 1 } }
+    ]},
+    { "id": "exterior", "nome": "Exterior", "itens": [
+      { "id": "spoiler_gt", "nome": "Aerofolio GT", "slot": "aerofolio", "preco": 800, "efeitos": { "downforce": 0.45, "peso_kg": 6, "valor_pct": 3 }, "visual": "spoiler" },
+      { "id": "rodas_esportivas", "nome": "Rodas esportivas douradas", "slot": "rodas", "preco": 1400, "efeitos": { "valor_pct": 3 }, "visual": "rodas", "cor": "#d9a521" },
+      { "id": "rodas_pretas", "nome": "Rodas pretas fosco", "slot": "rodas", "preco": 1200, "efeitos": { "valor_pct": 2 }, "visual": "rodas", "cor": "#1b1b1f" },
+      { "id": "neon_azul", "nome": "Neon azul (underglow)", "slot": "neon", "preco": 600, "efeitos": { "valor_pct": 1 }, "visual": "neon" }
+    ]},
+    { "id": "interior", "nome": "Interior", "itens": [
+      { "id": "bancos_esportivos", "nome": "Bancos esportivos", "slot": "bancos", "preco": 1300, "efeitos": { "peso_kg": -6, "valor_pct": 2 } },
+      { "id": "volante_esportivo", "nome": "Volante esportivo", "slot": "volante", "preco": 450, "efeitos": { "valor_pct": 1 } },
+      { "id": "gaiola", "nome": "Gaiola de seguranca", "slot": "gaiola", "preco": 2500, "efeitos": { "peso_kg": 35, "aderencia_pct": 2, "valor_pct": 1 } },
+      { "id": "multimidia", "nome": "Central multimidia", "slot": "multimidia", "preco": 700, "efeitos": { "valor_pct": 1 } }
+    ]},
+    { "id": "seguranca", "nome": "Seguranca", "itens": [
+      { "id": "alarme", "nome": "Alarme", "slot": "alarme", "preco": 500, "efeitos": { "alarme": true } },
+      { "id": "rastreador", "nome": "Rastreador GPS", "slot": "rastreador", "preco": 1200, "efeitos": { "rastreador": true } }
+    ]}
+  ],
+  "pinturas": [
+    { "id": "branco", "nome": "Branco geleira", "cor": "#f1f1ee", "preco": 250 },
+    { "id": "prata", "nome": "Prata", "cor": "#c9ced6", "preco": 250 },
+    { "id": "preto", "nome": "Preto", "cor": "#101216", "preco": 250 },
+    { "id": "vermelho", "nome": "Vermelho", "cor": "#b8211f", "preco": 250 },
+    { "id": "azul", "nome": "Azul Supremo", "cor": "#1e5fd8", "preco": 300 },
+    { "id": "amarelo", "nome": "Amarelo", "cor": "#e8c01a", "preco": 300 },
+    { "id": "verde", "nome": "Verde Brasil", "cor": "#14873b", "preco": 300 }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "nome": "Vila Supremo (bairro inicial)",
+  "dia_duracao_s": 720,
+  "hora_inicial": 17.5,
+  "pois": [
+    { "id": "garagem_jogador", "tipo": "garagem", "nome": "Garagem do Jogador", "ix": -2, "iz": 0 },
+    { "id": "oficina_zeca", "tipo": "oficina", "nome": "Oficina do Zeca", "ix": -1, "iz": 0 },
+    { "id": "estacionamento_centro", "tipo": "estacionamento", "nome": "Estacionamento do Centro", "ix": 0, "iz": 0 },
+    { "id": "posto_br", "tipo": "posto", "nome": "Posto Estrada BR", "ix": 1, "iz": 0 },
+    { "id": "lava_rapido", "tipo": "lavarapido", "nome": "Lava-Rapido BR", "ix": 2, "iz": 0 },
+    { "id": "banco", "tipo": "banco", "nome": "Banco da Vila", "ix": 0, "iz": -1 },
+    { "id": "concessionaria", "tipo": "concessionaria", "nome": "Concessionaria Supremo", "ix": 1, "iz": -1 },
+    { "id": "industria", "tipo": "industria", "nome": "Distrito Industrial", "ix": -1, "iz": -1 },
+    { "id": "hospital", "tipo": "hospital", "nome": "Hospital Municipal", "ix": 2, "iz": -1 },
+    { "id": "delegacia", "tipo": "delegacia", "nome": "Delegacia Distrital", "ix": 0, "iz": 1 },
+    { "id": "patio", "tipo": "patio", "nome": "Patio Municipal", "ix": -1, "iz": 1 },
+    { "id": "comunidade", "tipo": "comunidade", "nome": "Morro da Comunidade", "ix": 1, "iz": 1 }
+  ]
+}

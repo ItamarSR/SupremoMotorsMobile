@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "dinheiro_inicial": 3000,
+  "preco_combustivel_l": 6.2,
+  "taxa_guincho": 350,
+  "emprestimo_max": 5000,
+  "juros_emprestimo": 0.15,
+  "venda_pct": 0.6,
+  "depreciacao_max": 0.5,
+  "depreciacao_km": 300000,
+  "reparo_pct_preco": 0.15,
+  "troca_oleo": 150,
+  "oleo_intervalo_km": 5000,
+  "seguro": { "premio_pct_valor": 0.02, "cobertura_pct": 0.7, "adesao_pct_valor": 0.03 },
+  "despesas": { "intervalo_s": 240, "ipva_pct": 0.01, "ipva_a_cada_ciclos": 3 },
+  "estacionamento": {
+    "multa_apos_s": 25, "guincho_apos_s": 70,
+    "furto_intervalo_s": 30, "furto_chance_base": 0.25, "furto_motor_ligado_mult": 1.6, "furto_alarme_mult": 0.4,
+    "recuperacao_rastreador_taxa": 400
+  }
+}

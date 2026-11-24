@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "missoes": [
+    {
+      "id": "c1_primeiro_bico", "capitulo": 1, "titulo": "Primeiro bico",
+      "descricao": "Entrega de aplicativo: busque o pedido no posto e leve ao banco.",
+      "dialogo_inicio": "Zeca: Tem um pedido saindo do Posto Estrada BR para o Banco da Vila. Chega rapido e sem multa!",
+      "dialogo_fim": "Cliente: Chegou quentinho! Valeu.",
+      "tempo_limite_s": 240,
+      "passos": [
+        { "poi": "posto_br", "texto": "Busque o pedido no Posto Estrada BR", "raio": 16 },
+        { "poi": "banco", "texto": "Entregue no Banco da Vila", "raio": 16 }
+      ],
+      "recompensa": { "dinheiro": 180, "reputacao": 5 }
+    },
+    {
+      "id": "c1_carro_usado", "capitulo": 1, "titulo": "Carro usado",
+      "descricao": "Compre um segundo veiculo na concessionaria para montar sua garagem.",
+      "dialogo_inicio": "Zeca: Quem tem so um carro vive na mao do guincho. Junte uma grana e compre outro.",
+      "dialogo_fim": "Zeca: Agora sim, tem garagem!",
+      "requer": { "concluidas": ["c1_primeiro_bico"] },
+      "passos": [ { "tipo": "possuir_veiculos", "qtd": 2, "texto": "Tenha 2 veiculos na garagem (Concessionaria Supremo)" } ],
+      "recompensa": { "dinheiro": 0, "reputacao": 10 }
+    },
+    {
+      "id": "c1_autoescola_rua", "capitulo": 1, "titulo": "Autoescola de rua",
+      "descricao": "Passe pelos 5 pontos da avenida sem tomar nenhuma multa.",
+      "dialogo_inicio": "Instrutor: Respeite o limite de 60 km/h e o semaforo. Uma multa e voce reprova.",
+      "dialogo_fim": "Instrutor: Aprovado! Habilitacao no nome do cabra.",
+      "falha_se_multa": true, "tempo_limite_s": 300,
+      "requer": { "concluidas": ["c1_primeiro_bico"] },
+      "passos": [
+        { "pos": [-120, 40], "texto": "Ponto 1", "raio": 14 },
+        { "pos": [-40, 40], "texto": "Ponto 2", "raio": 14 },
+        { "pos": [40, 40], "texto": "Ponto 3", "raio": 14 },
+        { "pos": [40, -40], "texto": "Ponto 4", "raio": 14 },
+        { "pos": [-40, -40], "texto": "Ponto 5", "raio": 14 }
+      ],
+      "recompensa": { "dinheiro": 250, "reputacao": 10 }
+    },
+    {
+      "id": "c1_entrega_zeca", "capitulo": 1, "titulo": "Peca para o Zeca",
+      "descricao": "Busque uma peca na concessionaria e leve a oficina.",
+      "dialogo_inicio": "Zeca: Preciso de uma peca que ficou na Concessionaria Supremo. Traz pra mim?",
+      "dialogo_fim": "Zeca: Boa! Uma coisa: o cliente deu uma nota fiscal pra eu 'esquecer'...",
+      "tempo_limite_s": 260,
+      "requer": { "concluidas": ["c1_primeiro_bico"] },
+      "passos": [
+        { "poi": "concessionaria", "texto": "Pegue a peca na Concessionaria", "raio": 16 },
+        { "poi": "oficina_zeca", "texto": "Leve a peca a Oficina do Zeca", "raio": 16 }
+      ],
+      "recompensa": { "dinheiro": 220, "reputacao": 6 },
+      "escolha": {
+        "texto": "O cliente oferece R$ 150 para voce ignorar a nota fiscal (sonegar). O que faz?",
+        "opcoes": [
+          { "texto": "Aceitar a gorjeta (+R$150, -3 reputacao, vira 'infrator')", "efeitos": { "dinheiro": 150, "reputacao": -3, "flag": "infrator" } },
+          { "texto": "Recusar e emitir a nota (+3 reputacao)", "efeitos": { "reputacao": 3 } }
+        ]
+      }
+    }
+  ],
+  "capitulos": [
+    { "id": 1, "titulo": "Primeiro carro", "status": "prototipo" },
+    { "id": 2, "titulo": "Cultura de rua", "status": "bloqueado" },
+    { "id": 3, "titulo": "Construindo reputacao", "status": "bloqueado" },
+    { "id": 4, "titulo": "Pressao policial", "status": "bloqueado" },
+    { "id": 5, "titulo": "Grandes competicoes", "status": "bloqueado" },
+    { "id": 6, "titulo": "Imperio automotivo", "status": "bloqueado" }
+  ]
+}

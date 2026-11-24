@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "infracoes": {
+    "excesso_velocidade": { "nome": "Excesso de velocidade", "multa": 195, "suspeita": 12 },
+    "direcao_perigosa": { "nome": "Direcao perigosa", "multa": 293, "suspeita": 30 },
+    "avanco_sinal": { "nome": "Avanco de sinal", "multa": 293, "suspeita": 22 },
+    "estacionamento_proibido": { "nome": "Estacionamento proibido", "multa": 130, "suspeita": 0 },
+    "veiculo_irregular": { "nome": "Veiculo irregular", "multa": 450, "suspeita": 0 },
+    "fuga_fiscalizacao": { "nome": "Fuga de fiscalizacao", "multa": 880, "suspeita": 45 },
+    "corrida_ilegal": { "nome": "Participacao em corrida ilegal (ficticia)", "multa": 1200, "suspeita": 50 }
+  },
+  "niveis": [
+    { "min": 0, "resposta": "nenhuma" },
+    { "min": 30, "resposta": "abordagem" },
+    { "min": 60, "resposta": "perseguicao" },
+    { "min": 90, "resposta": "bloqueio" }
+  ],
+  "regioes": { "centro": 1.0, "residencial": 0.8, "industrial": 0.7, "rodovia": 1.3 },
+  "limites_kmh": { "rua": 60, "rodovia": 110, "estacionamento": 20, "fora": 40 },
+  "tolerancia_kmh": 10,
+  "direcao_perigosa_acima_kmh": 45,
+  "limite_multas_irregular": 3,
+  "historico_mult_por_flag": 0.1,
+  "cooldown_infracao_s": 8,
+  "decaimento_suspeita_por_s": 0.8,
+  "decaimento_fuga_por_s": 3.0,
+  "tempo_parada_abordagem_s": 3.0,
+  "tempo_ordem_parar_s": 7.0,
+  "distancia_spawn_min_m": 90,
+  "distancia_spawn_max_m": 170,
+  "distancia_fuga_m": 220,
+  "taxa_apreensao": 600
+}

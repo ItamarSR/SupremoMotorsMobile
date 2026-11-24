@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "observacao": "Valores aproximados de balanceamento (nao sao dados oficiais). Novos veiculos entram por pacotes em user://content/*.json ou res://content/*.json com este mesmo formato.",
+  "veiculos": [
+    {
+      "id": "gol_gl_1988", "fabricante": "Volkswagen", "modelo": "Gol GL", "geracao": "G1", "ano": 1988,
+      "categoria": "popular", "tipo": "carro", "estilo": "hatch", "loja": true,
+      "massa_kg": 820, "cg_altura_m": 0.50, "potencia_cv": 66, "torque_nm": 105,
+      "rpm_torque_pico": 3200, "rpm_max": 6000, "rpm_marcha_lenta": 900, "cilindros": 4, "arquitetura": "L4",
+      "marchas": [3.64, 2.06, 1.34, 0.97, 0.76], "diferencial": 4.11, "tracao": "dianteira", "cambio": "manual",
+      "dimensoes": { "comp": 3.80, "larg": 1.64, "alt": 1.40, "entre_eixos": 2.36, "bitola": 1.40 },
+      "raio_roda_m": 0.29, "tanque_l": 55, "consumo_km_l": 11, "escape_mm": 45, "cda": 0.72,
+      "confiabilidade": 0.92, "preco": 6500, "cor": "#c9ced6"
+    },
+    {
+      "id": "uno_mille_1996", "fabricante": "Fiat", "modelo": "Uno Mille", "geracao": "1a", "ano": 1996,
+      "categoria": "popular", "tipo": "carro", "estilo": "hatch", "loja": true,
+      "massa_kg": 770, "cg_altura_m": 0.50, "potencia_cv": 58, "torque_nm": 80,
+      "rpm_torque_pico": 3250, "rpm_max": 6200, "rpm_marcha_lenta": 900, "cilindros": 4, "arquitetura": "L4",
+      "marchas": [3.91, 2.16, 1.36, 0.97, 0.76], "diferencial": 4.54, "tracao": "dianteira", "cambio": "manual",
+      "dimensoes": { "comp": 3.69, "larg": 1.55, "alt": 1.39, "entre_eixos": 2.36, "bitola": 1.33 },
+      "raio_roda_m": 0.28, "tanque_l": 48, "consumo_km_l": 13, "escape_mm": 42, "cda": 0.70,
+      "confiabilidade": 0.93, "preco": 5200, "cor": "#b8211f"
+    },
+    {
+      "id": "fusca_1974", "fabricante": "Volkswagen", "modelo": "Fusca", "geracao": "Itamar", "ano": 1974,
+      "categoria": "classico", "tipo": "carro", "estilo": "fusca", "loja": true,
+      "massa_kg": 800, "cg_altura_m": 0.48, "potencia_cv": 46, "torque_nm": 87,
+      "rpm_torque_pico": 2400, "rpm_max": 4800, "rpm_marcha_lenta": 850, "cilindros": 4, "arquitetura": "boxer4",
+      "marchas": [3.80, 2.06, 1.26, 0.89], "diferencial": 4.38, "tracao": "traseira", "cambio": "manual",
+      "dimensoes": { "comp": 4.07, "larg": 1.54, "alt": 1.50, "entre_eixos": 2.40, "bitola": 1.31 },
+      "raio_roda_m": 0.30, "tanque_l": 40, "consumo_km_l": 10, "escape_mm": 38, "cda": 0.80,
+      "confiabilidade": 0.90, "preco": 9000, "cor": "#8d9aa8"
+    },
+    {
+      "id": "opala_ss_1976", "fabricante": "Chevrolet", "modelo": "Opala SS", "geracao": "1a", "ano": 1976,
+      "categoria": "classico", "tipo": "carro", "estilo": "coupe", "loja": true,
+      "massa_kg": 1200, "cg_altura_m": 0.52, "potencia_cv": 125, "torque_nm": 235,
+      "rpm_torque_pico": 2800, "rpm_max": 5200, "rpm_marcha_lenta": 800, "cilindros": 6, "arquitetura": "L6",
+      "marchas": [3.32, 1.99, 1.34, 1.00], "diferencial": 3.31, "tracao": "traseira", "cambio": "manual",
+      "dimensoes": { "comp": 4.55, "larg": 1.75, "alt": 1.35, "entre_eixos": 2.68, "bitola": 1.45 },
+      "raio_roda_m": 0.32, "tanque_l": 70, "consumo_km_l": 6, "escape_mm": 50, "cda": 0.80,
+      "confiabilidade": 0.88, "preco": 38000, "cor": "#101216"
+    },
+    {
+      "id": "skyline_r34", "fabricante": "Nissan", "modelo": "Skyline GT-R R34", "geracao": "R34", "ano": 1999,
+      "categoria": "importado", "tipo": "carro", "estilo": "coupe", "loja": true,
+      "massa_kg": 1560, "cg_altura_m": 0.46, "potencia_cv": 280, "torque_nm": 392,
+      "rpm_torque_pico": 4400, "rpm_max": 7500, "rpm_marcha_lenta": 850, "cilindros": 6, "arquitetura": "L6",
+      "marchas": [3.82, 2.36, 1.69, 1.31, 1.00, 0.79], "diferencial": 3.54, "tracao": "integral", "cambio": "manual",
+      "dimensoes": { "comp": 4.60, "larg": 1.79, "alt": 1.36, "entre_eixos": 2.67, "bitola": 1.49 },
+      "raio_roda_m": 0.33, "tanque_l": 65, "consumo_km_l": 6, "escape_mm": 63, "cda": 0.68,
+      "confiabilidade": 0.85, "preco": 450000, "cor": "#12151c"
+    },
+    {
+      "id": "cg_160", "fabricante": "Honda", "modelo": "CG 160", "geracao": "Titan", "ano": 2022,
+      "categoria": "motocicleta", "tipo": "moto", "estilo": "moto", "loja": true,
+      "massa_kg": 195, "cg_altura_m": 0.55, "potencia_cv": 15, "torque_nm": 14,
+      "rpm_torque_pico": 6000, "rpm_max": 9000, "rpm_marcha_lenta": 1400, "cilindros": 1, "arquitetura": "mono",
+      "marchas": [2.85, 1.90, 1.40, 1.10, 0.95], "diferencial": 6.2, "tracao": "traseira", "cambio": "manual",
+      "dimensoes": { "comp": 2.05, "larg": 0.80, "alt": 1.15, "entre_eixos": 1.36, "bitola": 0.0 },
+      "raio_roda_m": 0.30, "tanque_l": 16, "consumo_km_l": 40, "escape_mm": 35, "cda": 0.55,
+      "confiabilidade": 0.95, "preco": 15000, "cor": "#c2272d"
+    },
+    {
+      "id": "viatura", "fabricante": "Supremo", "modelo": "Viatura Distrital", "geracao": "-", "ano": 2020,
+      "categoria": "especial", "tipo": "carro", "estilo": "hatch", "loja": false, "policia": true,
+      "massa_kg": 1100, "cg_altura_m": 0.50, "potencia_cv": 140, "torque_nm": 190,
+      "rpm_torque_pico": 3500, "rpm_max": 6500, "rpm_marcha_lenta": 900, "cilindros": 4, "arquitetura": "L4",
+      "marchas": [3.60, 2.10, 1.40, 1.00, 0.78], "diferencial": 3.90, "tracao": "dianteira", "cambio": "manual",
+      "dimensoes": { "comp": 4.20, "larg": 1.70, "alt": 1.45, "entre_eixos": 2.55, "bitola": 1.45 },
+      "raio_roda_m": 0.31, "tanque_l": 50, "consumo_km_l": 9, "escape_mm": 50, "cda": 0.70,
+      "confiabilidade": 0.98, "preco": 0, "cor": "#f2f2f2"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+name: Build APK do jogo
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+jobs:
+  apk:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Instalar build-tools e plataforma
+        run: sdkmanager "build-tools;34.0.0" "platforms;android-34"
+
+      - uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.3.0
+          use-dotnet: false
+          include-templates: true
+
+      - name: Configurar Godot para Android
+        run: |
+          mkdir -p ~/.config/godot
+          keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey \
+            -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          cat > ~/.config/godot/editor_settings-4.3.tres <<EOF
+          [gd_resource type="EditorSettings" format=3]
+
+          [resource]
+          export/android/android_sdk_path = "$ANDROID_HOME"
+          export/android/java_sdk_path = "$JAVA_HOME"
+          export/android/debug_keystore = "$GITHUB_WORKSPACE/debug.keystore"
+          export/android/debug_keystore_user = "androiddebugkey"
+          export/android/debug_keystore_pass = "android"
+          EOF
+
+      - name: Importar projeto
+        run: godot --headless --path . --import || true
+
+      - name: Rodar testes
+        run: godot --headless --path . res://tests/test_runner.tscn
+        continue-on-error: true
+
+      - name: Exportar APK
+        run: |
+          mkdir -p build
+          godot --headless --path . --export-debug "Android" build/SupremoMotors.apk
+          ls -l build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SupremoMotors-APK
+          path: build/SupremoMotors.apk

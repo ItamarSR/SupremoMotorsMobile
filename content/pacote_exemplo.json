@@ -1,0 +1,15 @@
+{
+  "observacao": "Exemplo de pacote de conteudo: veiculos extras entram sem alterar o codigo. Copie arquivos .json neste formato para res://content ou user://content.",
+  "veiculos": [
+    {
+      "id": "strada_2020", "fabricante": "Fiat", "modelo": "Strada", "geracao": "3a", "ano": 2020,
+      "categoria": "utilitario", "tipo": "carro", "estilo": "hatch", "loja": true,
+      "massa_kg": 1100, "cg_altura_m": 0.55, "potencia_cv": 88, "torque_nm": 130,
+      "rpm_torque_pico": 3500, "rpm_max": 6200, "rpm_marcha_lenta": 850, "cilindros": 4, "arquitetura": "L4",
+      "marchas": [3.9, 2.2, 1.45, 1.05, 0.84], "diferencial": 4.2, "tracao": "dianteira", "cambio": "manual",
+      "dimensoes": { "comp": 4.45, "larg": 1.73, "alt": 1.50, "entre_eixos": 2.74, "bitola": 1.48 },
+      "raio_roda_m": 0.31, "tanque_l": 55, "consumo_km_l": 11, "escape_mm": 45, "cda": 0.85,
+      "confiabilidade": 0.93, "preco": 42000, "cor": "#f1f1ee"
+    }
+  ]
+}
